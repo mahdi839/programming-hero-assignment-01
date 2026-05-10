@@ -42,4 +42,36 @@ const result = getProperty(user, "name");
 
 console.log(result);
 
+// problem 05
+
+type Book = {
+  title: string;
+  author: string;
+  publishedYear: number;
+};
+
+function toggleReadStatus<T extends Book>(
+  book: T
+): T & { isRead: boolean } {
+  return {
+    ...book,
+    isRead: true,
+  };
+}
+
+
+const myBook = {
+  title: "TypeScript Guide",
+  author: "Jane Doe",
+  publishedYear: 2024,
+};
+
+const updatedBook = toggleReadStatus(myBook);
+
+console.log(updatedBook);
+
+// problem 06
+
+
+
 
