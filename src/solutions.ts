@@ -3,7 +3,7 @@ function filterEvenNumbers(numbers: number[]): number[] {
     return numbers.filter((number) => number % 2 === 0)
 }
 
-console.log(filterEvenNumbers([2, 4, 7, 9]))
+filterEvenNumbers([2, 4, 7, 9])
 
 // problem 02
 
@@ -11,7 +11,7 @@ function reverseString(revStr: string): string {
     return revStr.split("").reverse().join("");
 }
 
-console.log(reverseString('tpircsepyt'))
+reverseString('tpircsepyt')
 
 // problem 03
 type StringOrNumber = string | number;
@@ -24,7 +24,7 @@ function checkType(value: StringOrNumber): string {
     }
 }
 
-console.log(checkType('hello'))
+checkType('hello')
 
 // problem 04
 
@@ -38,9 +38,8 @@ const user = {
     age: 21,
 };
 
-const result = getProperty(user, "name");
+ getProperty(user, "name");
 
-console.log(result);
 
 // problem 05
 
@@ -66,9 +65,9 @@ const myBook = {
     publishedYear: 2024,
 };
 
-const updatedBook = toggleReadStatus(myBook);
+toggleReadStatus(myBook);
 
-console.log(updatedBook);
+
 
 // problem 06
 
@@ -95,7 +94,7 @@ class Student extends Person{
 
 const student = new Student("Alice", 20, "A");
 
-console.log(student.getDetails());
+student.getDetails()
 
 
 // problem 07
@@ -104,12 +103,10 @@ function getIntersection (array1:number[],array2:number[]){
     return array1.filter((item)=>array2.includes(item))
 }
 
-const resultOfTheProblem = getIntersection(
+ getIntersection(
   [1, 2, 3, 4, 5],
   [3, 4, 5, 6, 7]
 );
-
-console.log(resultOfTheProblem);
 
 
 
